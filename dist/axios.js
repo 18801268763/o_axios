@@ -1,4 +1,3 @@
-/* axios v0.19.0 | (c) 2019 by Matt Zabriskie */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -531,7 +530,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	
 	  config = mergeConfig(this.defaults, config);
-	  config.method = config.method ? config.method.toLowerCase() : 'get';
+	  config.method = config.method ? config.method.toLowerCase() : 'post';
 	
 	  // Hook up interceptors middleware
 	  var chain = [dispatchRequest, undefined];

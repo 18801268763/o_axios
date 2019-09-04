@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no">
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="images/x-icon" href="https://github.githubassets.com/images/icons/emoji/unicode/1f47d.png?v8">
+  <script src="./axios.js"></script>
+  <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        
+    </div>
+<script>
+        let instance = axios.create({
+            baseURL:'https://api.gihub.com',
+            method:'get'
+        })
+        instance('/emojis').then(data=>{
+            console.log(data);
+        })
+</script>
+</body>
+</html>
